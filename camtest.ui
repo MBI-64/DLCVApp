@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButtonStart">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>361</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonStop">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>20</y>
+      <width>361</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgBox">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>89</y>
+      <width>731</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="midLineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Load</string>
+    </property>
+    <addaction name="actionImage_Folder"/>
+    <addaction name="actionOffline_Video"/>
+    <addaction name="actionLive_Cam_Stream"/>
+   </widget>
+   <widget class="QMenu" name="menuFrame_Rate">
+    <property name="title">
+     <string>Frame Rate</string>
+    </property>
+    <addaction name="action1_FPS"/>
+    <addaction name="action3_FPS"/>
+    <addaction name="action10_FPS"/>
+    <addaction name="action25_FPS"/>
+   </widget>
+   <widget class="QMenu" name="menuFilters">
+    <property name="title">
+     <string>Filters</string>
+    </property>
+    <addaction name="actionGrayScale"/>
+    <addaction name="actionEdge_Filter"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuFrame_Rate"/>
+   <addaction name="menuFilters"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionImage_Folder">
+   <property name="text">
+    <string>Image Folder</string>
+   </property>
+  </action>
+  <action name="actionOffline_Video">
+   <property name="text">
+    <string>Offline Video</string>
+   </property>
+  </action>
+  <action name="actionLive_Cam_Stream">
+   <property name="text">
+    <string>Live Cam Stream</string>
+   </property>
+  </action>
+  <action name="action1_FPS">
+   <property name="text">
+    <string>1 FPS</string>
+   </property>
+  </action>
+  <action name="action3_FPS">
+   <property name="text">
+    <string>3 FPS</string>
+   </property>
+  </action>
+  <action name="action10_FPS">
+   <property name="text">
+    <string>10 FPS</string>
+   </property>
+  </action>
+  <action name="action25_FPS">
+   <property name="text">
+    <string>25 FPS</string>
+   </property>
+  </action>
+  <action name="actionGrayScale">
+   <property name="text">
+    <string>GrayScale</string>
+   </property>
+  </action>
+  <action name="actionEdge_Filter">
+   <property name="text">
+    <string>Edge Filter</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
